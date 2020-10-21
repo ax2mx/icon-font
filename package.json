@@ -8,6 +8,7 @@
     "npm-run-all": "^4.1.5"
   },
   "devDependencies": {
+    "clean-package": "^1.0.1",
     "csso-cli": "^3.0.0",
     "open-cli": "^6.0.1"
   },
@@ -19,7 +20,9 @@
     "show": "open-cli preview.html",
     "minify": "csso css/icon-font.css -o css/icon-font.min.css",
     "dev": "run-s init gen:dev show",
-    "build": "run-s init gen:prod minify"
+    "build": "run-s init gen:prod minify",
+    "prepack": "clean-package -rm 'scripts', 'devDependencies', 'dependencies'",
+    "postpack": "clean-package restore"
   },
   "repository": {
     "type": "git",
