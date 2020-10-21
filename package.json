@@ -1,0 +1,24 @@
+{
+  "name": "icon-font",
+  "version": "0.1.0",
+  "description": "Simple icon font",
+  "main": "index.js",
+  "dependencies": {
+    "icon-font-generator": "^2.1.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "init": "rm -rf fonts && mkdir fonts",
+    "gen": "icon-font-generator src/*.svg -o fonts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ax2mx/icon-font.git"
+  },
+  "author": "Andrei Marukhin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ax2mx/icon-font/issues"
+  },
+  "homepage": "https://github.com/ax2mx/icon-font#readme"
+}
