@@ -1,5 +1,5 @@
 {
-  "name": "@ax2mx/icon-font",
+  "name": "simple-icon-font",
   "version": "0.1.0",
   "description": "Simple icon font",
   "main": "index.js",
