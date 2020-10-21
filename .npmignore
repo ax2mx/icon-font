@@ -3,5 +3,4 @@
 *.html
 *.tgz
 node_modules
-fonts
-css
+src
